@@ -1,4 +1,6 @@
-<a href="https://github.com/jnbdz">
+Welcome to my GitHub page!
+
+<!--<a href="https://github.com/jnbdz">
   <img align="center" width="49%" src="./header.svg" />
 </a>
 <br/>
@@ -22,4 +24,4 @@
 </a>
 <a href="https://github.com/jnbdz">
     <img align="center" width="49%" src="./achievements.svg" />
-</a>
+</a>-->
