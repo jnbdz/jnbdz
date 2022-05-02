@@ -1,4 +1,6 @@
-Welcome to my GitHub page!
+<a href="https://github.com/jnbdz">
+  <img align="center" width="49%" src="./github-metrics.svg" />
+</a>
 
 <!--<a href="https://github.com/jnbdz">
   <img align="center" width="49%" src="./header.svg" />
