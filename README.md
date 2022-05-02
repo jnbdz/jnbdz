@@ -6,6 +6,10 @@
   <img align="center" width="49%" src="./iso_calender.svg" />
 </a>
 
+<a href="https://github.com/jnbdz">
+    <img align="center" width="49%" src="./achievements.svg" />
+</a>
+
 <!--<a href="https://github.com/jnbdz">
   <img align="center" width="49%" src="./header.svg" />
 </a>
