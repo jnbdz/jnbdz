@@ -1,4 +1,4 @@
-<a href="https://github.com/jnbdz">
+<!--<a href="https://github.com/jnbdz">
   <img align="center" width="49%" src="./github-metrics.svg" />
 </a>
 
@@ -8,9 +8,9 @@
 
 <a href="https://github.com/jnbdz">
     <img align="center" width="49%" src="./achievements.svg" />
-</a>
+</a>-->
 
-<!--<a href="https://github.com/jnbdz">
+<a href="https://github.com/jnbdz">
   <img align="center" width="49%" src="./header.svg" />
 </a>
 <br/>
@@ -34,4 +34,4 @@
 </a>
 <a href="https://github.com/jnbdz">
     <img align="center" width="49%" src="./achievements.svg" />
-</a>-->
+</a>
