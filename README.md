@@ -13,7 +13,7 @@
 <a href="https://github.com/jnbdz">
   <img align="center" width="49%" src="./header.svg" />
 </a>
-<a href="https://github.com/jnbdz"><img src="https://img.shields.io/github/followers/jnbdz.svg?label=GitHub&style=social" alt="GitHub"></a>
+<a href="https://github.com/jnbdz" style="padding-top: 15px;"><img src="https://img.shields.io/github/followers/jnbdz.svg?label=GitHub&style=social" alt="GitHub"></a>
 <br/>
 <a href="https://github.com/jnbdz">
   <img align="center" width="49%" src="./repositories.svg" />
