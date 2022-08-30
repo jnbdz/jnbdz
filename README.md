@@ -37,5 +37,5 @@
 </a>
 
 <p>
-*Source of profile: [Bernal Saborio](https://www.flickr.com/photos/44073224@N04/24217734339/in/photostream/)*
+<em>Source of profile: <a href="https://www.flickr.com/photos/44073224@N04/24217734339/in/photostream/">Bernal Saborio</a></em>
 </p>
