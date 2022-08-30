@@ -35,3 +35,7 @@
 <a href="https://github.com/jnbdz">
     <img align="center" width="49%" src="./achievements.svg" />
 </a>
+
+<p>
+*Source of profile: [Bernal Saborio](https://www.flickr.com/photos/44073224@N04/24217734339/in/photostream/)*
+</p>
