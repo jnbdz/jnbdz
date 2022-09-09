@@ -40,6 +40,8 @@
 <a href="https://stackexchange.com/users/381964"><img src="https://stackexchange.com/users/flair/381964.png" width="208" height="58" alt="profile for jnbdz on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for jnbdz on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
 </p>
 
+<hr>
+
 <p>
 <em>Source of profile picture: <a href="https://www.flickr.com/photos/44073224@N04/24217734339/in/photostream/">Bernal Saborio</a></em> <a href="https://creativecommons.org/licenses/by-sa/2.0/"><img src="./assets/80x15-by-sa.svg" alt="by-sa"></a>
 </p>
