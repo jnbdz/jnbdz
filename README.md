@@ -41,5 +41,5 @@
 </p>
 
 <p>
-<em>Source of profile picture: <a href="https://www.flickr.com/photos/44073224@N04/24217734339/in/photostream/">Bernal Saborio</a> | <a href="https://creativecommons.org/licenses/by-sa/2.0/"><img src="./assets/80x15-by-sa.svg" alt="by-sa"></a></em>
+<em>Source of profile picture: <a href="https://www.flickr.com/photos/44073224@N04/24217734339/in/photostream/">Bernal Saborio</a></em> | <a href="https://creativecommons.org/licenses/by-sa/2.0/"><img src="./assets/80x15-by-sa.svg" alt="by-sa"></a>
 </p>
