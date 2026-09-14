@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Fork pin: upstream master + lowlighter/metrics#1834 (projectsV2 + null commit guards)
-      - uses: jnbdz/metrics@1e49d0b8b932624dd7762147e35ccc137eda09f1
+      - uses: jnbdz/metrics@88e1aea1c5aada2586ba52d420cf179291b88887
         with:
           filename: achievements.svg
           token: ${{ secrets.METRICS_SECRET }}
@@ -92,7 +92,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Fork pin: upstream master + lowlighter/metrics#1834 (projectsV2 + null commit guards)
-      - uses: jnbdz/metrics@1e49d0b8b932624dd7762147e35ccc137eda09f1
+      - uses: jnbdz/metrics@88e1aea1c5aada2586ba52d420cf179291b88887
         with:
           filename: github-habits.svg
           token: ${{ secrets.METRICS_SECRET }}
