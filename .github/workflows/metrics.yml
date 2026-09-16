@@ -11,10 +11,12 @@ jobs:
   achievements:
     runs-on: ubuntu-latest
     steps:
-      # Fork pin: upstream master + lowlighter/metrics#1834 (projectsV2 + null commit guards)
-      - uses: jnbdz/metrics@88e1aea1c5aada2586ba52d420cf179291b88887
+      # Fork pin: upstream master + lowlighter/metrics#1834 (projectsV2 + null commit guards) + repositories pagination fix
+      - uses: jnbdz/metrics@f70a440e88d4a0db9f954be6e6a1d2e33db171ff
         with:
           filename: achievements.svg
+          repositories: 1000          # Count all owned repositories, not just the 100 most recent
+          repositories_batch: 50      # 100 per query times out on the GraphQL API
           token: ${{ secrets.METRICS_SECRET }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: jnbdz
@@ -44,11 +46,15 @@ jobs:
   lines:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      # Fork pin: upstream master + lowlighter/metrics#1834 + repositories pagination fix (upstream loads 0 repos on API timeout)
+      - uses: jnbdz/metrics@f70a440e88d4a0db9f954be6e6a1d2e33db171ff
         with:
           filename: lines-of-code.svg
+          repositories: 1000          # Count all owned repositories, not just the 100 most recent
+          repositories_batch: 50      # 100 per query times out on the GraphQL API
           token: ${{ secrets.METRICS_SECRET }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: jnbdz
           base: "repositories"
           plugin_lines: yes
 
@@ -91,10 +97,12 @@ jobs:
   habits:
     runs-on: ubuntu-latest
     steps:
-      # Fork pin: upstream master + lowlighter/metrics#1834 (projectsV2 + null commit guards)
-      - uses: jnbdz/metrics@88e1aea1c5aada2586ba52d420cf179291b88887
+      # Fork pin: upstream master + lowlighter/metrics#1834 (projectsV2 + null commit guards) + repositories pagination fix
+      - uses: jnbdz/metrics@f70a440e88d4a0db9f954be6e6a1d2e33db171ff
         with:
           filename: github-habits.svg
+          repositories: 1000          # Count all owned repositories, not just the 100 most recent
+          repositories_batch: 50      # 100 per query times out on the GraphQL API
           token: ${{ secrets.METRICS_SECRET }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           config_timezone: ${{ secrets.USER_TIMEZONE }} # Set timezone
@@ -110,9 +118,12 @@ jobs:
   issue_pr_lang:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      # Fork pin: upstream master + lowlighter/metrics#1834 + repositories pagination fix (upstream loads 0 repos on API timeout)
+      - uses: jnbdz/metrics@f70a440e88d4a0db9f954be6e6a1d2e33db171ff
         with:
           filename: issue_pr_lang.svg
+          repositories: 1000          # Count all owned repositories, not just the 100 most recent
+          repositories_batch: 50      # 100 per query times out on the GraphQL API
           # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
@@ -124,15 +135,19 @@ jobs:
           base: ""
           config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_followup: yes
+          plugin_followup_sections: repositories, user  # Also show issues/PRs you opened elsewhere
           plugin_languages: yes
 
 
   repositories:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      # Fork pin: upstream master + lowlighter/metrics#1834 + repositories pagination fix (upstream loads 0 repos on API timeout)
+      - uses: jnbdz/metrics@f70a440e88d4a0db9f954be6e6a1d2e33db171ff
         with:
           filename: repositories.svg
+          repositories: 1000          # Count all owned repositories, not just the 100 most recent
+          repositories_batch: 50      # 100 per query times out on the GraphQL API
           # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
