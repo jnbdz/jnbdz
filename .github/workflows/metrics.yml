@@ -13,6 +13,14 @@ jobs:
     # Fork jobs rebuild the Docker image; apt occasionally hangs, so fail fast and let the next hourly run retry
     timeout-minutes: 25
     steps:
+      # Reuse the image published by jnbdz/metrics (workflow: publish-fork-image).
+      # The action rebuilds a forked image unless one is already tagged locally, and that
+      # build costs ~9 minutes and intermittently hangs; falling back to it is harmless.
+      - name: Use prebuilt fork image
+        continue-on-error: true
+        run: |
+          IMAGE=ghcr.io/jnbdz/metrics:forked-3.35.0-beta
+          docker pull "$IMAGE" && docker tag "$IMAGE" metrics:forked-3.35.0-beta
       # Fork pin: upstream master + lowlighter/metrics#1834 (projectsV2 + null commit guards) + repositories pagination fix
       - uses: jnbdz/metrics@f70a440e88d4a0db9f954be6e6a1d2e33db171ff
         with:
@@ -50,6 +58,14 @@ jobs:
     # Fork jobs rebuild the Docker image; apt occasionally hangs, so fail fast and let the next hourly run retry
     timeout-minutes: 25
     steps:
+      # Reuse the image published by jnbdz/metrics (workflow: publish-fork-image).
+      # The action rebuilds a forked image unless one is already tagged locally, and that
+      # build costs ~9 minutes and intermittently hangs; falling back to it is harmless.
+      - name: Use prebuilt fork image
+        continue-on-error: true
+        run: |
+          IMAGE=ghcr.io/jnbdz/metrics:forked-3.35.0-beta
+          docker pull "$IMAGE" && docker tag "$IMAGE" metrics:forked-3.35.0-beta
       # Fork pin: upstream master + lowlighter/metrics#1834 + repositories pagination fix (upstream loads 0 repos on API timeout)
       - uses: jnbdz/metrics@f70a440e88d4a0db9f954be6e6a1d2e33db171ff
         with:
@@ -103,6 +119,14 @@ jobs:
     # Fork jobs rebuild the Docker image; apt occasionally hangs, so fail fast and let the next hourly run retry
     timeout-minutes: 25
     steps:
+      # Reuse the image published by jnbdz/metrics (workflow: publish-fork-image).
+      # The action rebuilds a forked image unless one is already tagged locally, and that
+      # build costs ~9 minutes and intermittently hangs; falling back to it is harmless.
+      - name: Use prebuilt fork image
+        continue-on-error: true
+        run: |
+          IMAGE=ghcr.io/jnbdz/metrics:forked-3.35.0-beta
+          docker pull "$IMAGE" && docker tag "$IMAGE" metrics:forked-3.35.0-beta
       # Fork pin: upstream master + lowlighter/metrics#1834 (projectsV2 + null commit guards) + repositories pagination fix
       - uses: jnbdz/metrics@f70a440e88d4a0db9f954be6e6a1d2e33db171ff
         with:
@@ -126,6 +150,14 @@ jobs:
     # Fork jobs rebuild the Docker image; apt occasionally hangs, so fail fast and let the next hourly run retry
     timeout-minutes: 25
     steps:
+      # Reuse the image published by jnbdz/metrics (workflow: publish-fork-image).
+      # The action rebuilds a forked image unless one is already tagged locally, and that
+      # build costs ~9 minutes and intermittently hangs; falling back to it is harmless.
+      - name: Use prebuilt fork image
+        continue-on-error: true
+        run: |
+          IMAGE=ghcr.io/jnbdz/metrics:forked-3.35.0-beta
+          docker pull "$IMAGE" && docker tag "$IMAGE" metrics:forked-3.35.0-beta
       # Fork pin: upstream master + lowlighter/metrics#1834 + repositories pagination fix (upstream loads 0 repos on API timeout)
       - uses: jnbdz/metrics@f70a440e88d4a0db9f954be6e6a1d2e33db171ff
         with:
@@ -152,6 +184,14 @@ jobs:
     # Fork jobs rebuild the Docker image; apt occasionally hangs, so fail fast and let the next hourly run retry
     timeout-minutes: 25
     steps:
+      # Reuse the image published by jnbdz/metrics (workflow: publish-fork-image).
+      # The action rebuilds a forked image unless one is already tagged locally, and that
+      # build costs ~9 minutes and intermittently hangs; falling back to it is harmless.
+      - name: Use prebuilt fork image
+        continue-on-error: true
+        run: |
+          IMAGE=ghcr.io/jnbdz/metrics:forked-3.35.0-beta
+          docker pull "$IMAGE" && docker tag "$IMAGE" metrics:forked-3.35.0-beta
       # Fork pin: upstream master + lowlighter/metrics#1834 + repositories pagination fix (upstream loads 0 repos on API timeout)
       - uses: jnbdz/metrics@f70a440e88d4a0db9f954be6e6a1d2e33db171ff
         with:
