@@ -29,6 +29,11 @@ jobs:
           repositories_batch: 50      # 100 per query times out on the GraphQL API
           token: ${{ secrets.METRICS_SECRET }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          # A plugin error normally gets drawn into the SVG as a red "Unexpected error" box and committed.
+          # Fail the run instead so nothing is committed and the last good image stays in place
+          # (rendering is still retried 3 times before giving up; the next hourly run tries again).
+          plugins_errors_fatal: yes
+          retries_delay: 60
           user: jnbdz
           base: achievements
           plugin_achievements: yes
@@ -47,6 +52,11 @@ jobs:
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          # A plugin error normally gets drawn into the SVG as a red "Unexpected error" box and committed.
+          # Fail the run instead so nothing is committed and the last good image stays in place
+          # (rendering is still retried 3 times before giving up; the next hourly run tries again).
+          plugins_errors_fatal: yes
+          retries_delay: 60
 
           # Options
           user: jnbdz
@@ -74,6 +84,11 @@ jobs:
           repositories_batch: 50      # 100 per query times out on the GraphQL API
           token: ${{ secrets.METRICS_SECRET }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          # A plugin error normally gets drawn into the SVG as a red "Unexpected error" box and committed.
+          # Fail the run instead so nothing is committed and the last good image stays in place
+          # (rendering is still retried 3 times before giving up; the next hourly run tries again).
+          plugins_errors_fatal: yes
+          retries_delay: 60
           user: jnbdz
           base: "repositories"
           plugin_lines: yes
@@ -88,6 +103,11 @@ jobs:
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          # A plugin error normally gets drawn into the SVG as a red "Unexpected error" box and committed.
+          # Fail the run instead so nothing is committed and the last good image stays in place
+          # (rendering is still retried 3 times before giving up; the next hourly run tries again).
+          plugins_errors_fatal: yes
+          retries_delay: 60
 
           # Options
           user: jnbdz
@@ -105,6 +125,11 @@ jobs:
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          # A plugin error normally gets drawn into the SVG as a red "Unexpected error" box and committed.
+          # Fail the run instead so nothing is committed and the last good image stays in place
+          # (rendering is still retried 3 times before giving up; the next hourly run tries again).
+          plugins_errors_fatal: yes
+          retries_delay: 60
 
           # Options
           user: jnbdz
@@ -135,6 +160,11 @@ jobs:
           repositories_batch: 50      # 100 per query times out on the GraphQL API
           token: ${{ secrets.METRICS_SECRET }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          # A plugin error normally gets drawn into the SVG as a red "Unexpected error" box and committed.
+          # Fail the run instead so nothing is committed and the last good image stays in place
+          # (rendering is still retried 3 times before giving up; the next hourly run tries again).
+          plugins_errors_fatal: yes
+          retries_delay: 60
           config_timezone: ${{ secrets.USER_TIMEZONE }} # Set timezone
           user: jnbdz
           base: ""
@@ -168,6 +198,11 @@ jobs:
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          # A plugin error normally gets drawn into the SVG as a red "Unexpected error" box and committed.
+          # Fail the run instead so nothing is committed and the last good image stays in place
+          # (rendering is still retried 3 times before giving up; the next hourly run tries again).
+          plugins_errors_fatal: yes
+          retries_delay: 60
 
           # Options
           user: jnbdz
@@ -202,6 +237,11 @@ jobs:
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          # A plugin error normally gets drawn into the SVG as a red "Unexpected error" box and committed.
+          # Fail the run instead so nothing is committed and the last good image stays in place
+          # (rendering is still retried 3 times before giving up; the next hourly run tries again).
+          plugins_errors_fatal: yes
+          retries_delay: 60
 
           # Options
           user: jnbdz
